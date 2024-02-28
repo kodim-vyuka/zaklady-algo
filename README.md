@@ -8,4 +8,5 @@
 6. Základy rekurze
 7. Stromové struktury
 8. Prohledávání do hloubky a do šířky 
-9. Grafové struktury
+9. Hashování
+10. Závěrečná cvičení
