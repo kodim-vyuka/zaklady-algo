@@ -1,0 +1,14 @@
+title: Programování a algoritmy pro praxi
+lead: Praktické programovací techniky a algoritmy, které by měl znát každý programátor
+intro: intro.md
+lessons:
+  - lessons/vstup-vystup
+  - lessons/cykly-pole
+  - lessons/slozitost
+  - lessons/vyhledavani
+  - lessons/zasobnik-fronta
+  - lessons/rekurze
+  - lessons/stromy
+  - lessons/logaritmy
+  - lessons/houbka-sirka
+  - lessons/trizeni
