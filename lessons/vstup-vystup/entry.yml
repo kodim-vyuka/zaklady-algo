@@ -1,4 +1,5 @@
 title: Vstup a výstup v NodeJS
 lead: Abychom nemusli pro každou úložku vymýšlet celou aplikaci, neučíme se načítat a zapisovat data do textových souborů v NodeJS
 access: protected
-sections: []
+sections:
+  - nodejs
