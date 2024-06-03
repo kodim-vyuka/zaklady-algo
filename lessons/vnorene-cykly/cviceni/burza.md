@@ -34,6 +34,10 @@ Souvislá část pole s největším součtem v našem příkladu sahá od index
 
 ### Odevzdání
 
+Prohlédněte si vývoj ceny akcií společnosti ČEZ během jednoho roku mezi 1. červnem 2023 a 31. květnem 2024.
+
+::fig{src=assets/cez-akcie.png}
+
 Jako řešení úkolu odezvdejte 
 
 - **za jeden bod** - zdrojový kód funkce `maxProfit(prices)`
