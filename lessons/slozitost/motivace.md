@@ -1,46 +1,33 @@
-## Klasícký for cyklus
+## Modelový problém
 
-Cyklus je nejčastěji používaná konstrukce při řešení algoritmických problémů. Pomocí cyklu můžeme opakovat stejný kód několikrát, dokud není splněna nějaká podmínka, vyčerpány všechny hodnoty v poli nebo dokud prostě nejsme spokojeni s výsledkem výpočtu.
+Když vymyšlíme algoritmus pro řešení nějakého problému, to nejdůležitější, co nás většinou zajímá, je jak rychle tento algoritmus dokáže pracovat. Odborně tomu, jak rychle algoritmus pracuje, říkáme ::term{cs="časová složitost" en="time complexity"}. Pro ilustraci toho, jak nad časovou složitostí algoritmů přemýšlíme, si rozebereme možná řešení domácího úkolu z minulé lekce o cenách akcií na burze.
 
-V různých jazycích máme k dispozici různé druhy cyklů a jejich zápisů. Většina jazyků podporuje takzvaný klasický `for` cyklus, který pochází z jazyka C a je velmi univerzální a flexibilní.
+### Pohyb cen akcií
 
-```js
-for (let i = 0; i < 10; i++) {
-  console.log(i);
-}
-```
+Zadání domácího úkolu ukazovalo na tři možná řešení:
 
-Tento cyklus se skládá ze tří částí:
+- nejpřímočařejší řešení problému využívá tři do sebe zanořené cykly,
+- chytřejší řešení využívá pouze dva do sebe zanořené cykly,
+- nejchytřejší řešení využívá pouze jeden cyklus.
 
-1. **Inicializace** - `let i = 0` - zde vytvoříme takzvanou _řídící proměnnou_ `i` a nastavíme ji na počáteční hodnotu (v tomto případě 0).
-2. **Podmínka** - `i < 10` - dokud je tato podmínka splněna, cyklus se bude opakovat.
-3. **Iterace** - `i++` - po každém průchodu cyklem se provede tento příkaz. V našem případě se jedná o zvýšení hodnoty proměnné `i` o 1.
+Přestože jsme ještě detailně o časové složitosti algoritmů nemluvili, intuitivně asi tušíte, že algoritmus procházející pole jedním cyklem bude rychlejší než algoritmus procházející pole třemi vnořenými cykly.
 
-Výstupem tohoto cyklu bude postupné vypsání čísel od 0 do 9. Na konci cyklu bude proměnná `i` rovna 10, cyklus se proto již neopakuje, protože podmínka `i < 10` proprvé nebude splněna.
+Kdybychom chtěli rychlost algoritmu nějak kvantifikovat, to nejjednodušší, co můžeme udělat, je prostě stopnout, jak dlouho algoritmus běží pro nějakou velikost vstupu. 
 
-## Procházení pole
+### Měření času
 
-Cyklus často používáme k procházení prvků v nějakém poli. Takto můžeme například vypsat všechny prvky pole na obrazovku:
+Následující graf ukazuje, jak dlouho zabralo jednotlivým algoritmům spočítat výsledek v závislosti na velikosti vstupu. Měření probíhalo tak, že pro každou velikost vstupu _n_ jsme vygenerovali 100 náhoných polí délky _n_ a změřili průměrný čas, který algoritmus potřeboval k výpočtu výsledku pro jedno pole.
 
-```js
-const pole = [10, 8, 3, 1, 5];
-for (let i = 0; i < pole.length; i++) {
-  console.log(pole[i]);
-}
-```
+Pro pole délky 100 byl průměrný čas výpočtu následující:
 
-Cyklus `for` je dostatečně flexibilní, abychom mohli procházet pole různými způsoby. Například procházení pole od konce:
+- pro algoritmus s třemi cykly: 16 141 µs, (takto vysoká hodnota se do grafu už nevešla),
+- pro algoritmus s dvěma cykly: 1 285 µs,
+- pro algoritmus s jedním cyklem: 232 µs.
 
-```js
-for (let i = pole.length - 1; i >= 0; i--) {
-  console.log(pole[i]);
-}
-```
+Kdybychom se podívali pouze na tyto poslední hodnoty, mohly bychom si říct, že
 
-nebo třeba procházení po dvou:
+- algoritmus se dvěma cykly je cca 13× rychlější než algoritmus s třemi cykly,
+- algoritmus s jedním cyklem je cca 6× rychlejší než algoritmus s dvěma cykly.
 
-```js
-for (let i = 0; i < pole.length; i += 2) {
-  console.log(pole[i]);
-}
-```
+Takového měření rychlosti ovšem nedává moc smysl, a to z mnoha důvodů, které probereme v následující sekci.
+
