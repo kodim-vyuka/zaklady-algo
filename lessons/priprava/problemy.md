@@ -18,17 +18,17 @@ Pojďme si pro každou kategorii vyzkoušet jednoduchý příklad. Pro každý p
 
 **Zadání:** Máme pole řetězců a chceme najít první řetězec, který je prázdný.
 
-**Řešení:** Projdeme pole pomocí cyklu a na každém prvku zkontrolujeme, zda je prázdný. Vrátíme index prvního prázdného řetězce nebo `null`, pokud v poli žádný není.
+**Řešení:** Projdeme pole pomocí cyklu a na každém prvku zkontrolujeme, zda je prázdný. Vrátíme index prvního prázdného řetězce nebo `none`, pokud v poli žádný není.
 
-```js
-const findEmptyString = (array) => {
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === '') {
-      return i;
-    }
-  }
-  return null;
-}
+```
+function findEmptyString(array)
+  for i from 0 to array.length - 1 do
+    if array[i] == '' then
+      return i
+    end if
+  end for
+  return none
+end function
 ```
 
 ### Filtrování
@@ -37,16 +37,16 @@ const findEmptyString = (array) => {
 
 **Řešení:** Projdeme pole pomocí cyklu a na každém prvku zkontrolujeme, zda je větší než 0. Pokud ano, přidáme ho do nového pole.
 
-```js
-const filterPositiveNumbers = (array) => {
-  const result = [];
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] > 0) {
-      result.push(array[i]);
-    }
-  }
-  return result;
-}
+```
+function filterPositiveNumbers(array)
+  result = []
+  for i from 0 to array.length - 1 do
+    if array[i] > 0 then
+      result.insertEnd(array[i])
+    end if
+  end for
+  return result
+end function
 ```
 
 ### Transformace
@@ -83,19 +83,19 @@ const average = (array) => {
 
 ### Testování
 
-**Zadání:** Máme pole řetězců a chceme zjistit, zda některý z nich obsahuje slovo "JavaScript".
+**Zadání:** Máme pole řetězců a chceme zjistit, zda některý z nich obsahuje slovo "trdloň".
 
 **Řešení:** Projdeme pole pomocí cyklu a na každém prvku zkontrolujeme, zda obsahuje hledaný řetězec. Pokud ano, vrátíme `true`. Pokud žádný prvek neobsahuje hledaný řetězec, vrátíme `false`.
 
-```js
-const containsJavaScript = (array) => {
-  for (let i = 0; i < array.length; i++) {
-    if (array[i].includes('JavaScript')) {
-      return true;
-    }
-  }
-  return false;
-}
+```
+function containsTrdlon(array)
+  for i from 0 to array.length - 1 do
+    if array[i].includes('trdloň') then
+      return true
+    end if
+  end for
+  return false
+end function
 ```
 
 ## Kombinace postupů
@@ -108,16 +108,16 @@ Zkusme proto na závěr nějaký problém, který bude kombinovat několik postu
 
 **Řešení:** Projdeme pole pomocí cyklu a pro každého uživatele zkontrolujeme, zda je starší než 18 let. Pokud ano, přidáme jeho věk do celového součtu a zároveň zvýšíme počitadlo dospělých uživatelů. Na konci vydělíme součet věků počtem dospělých uživatelů.
 
-```js
-const averageAdultAge = (users) => {
-  let sum = 0;
-  let adultCount = 0;
-  for (let i = 0; i < users.length; i++) {
-    if (users[i].age >= 18) {
-      sum += users[i].age;
-      adultCount++;
-    }
-  }
-  return sum / adultCount;
-}
+```
+function averageAdultAge(users)
+  sum = 0
+  adultCount = 0
+  for i from 0 to users.length - 1 do
+    if users[i].age >= 18 then
+      sum = sum + users[i].age
+      adultCount = adultCount + 1
+    end if
+  end for
+  return sum / adultCount
+end function
 ```

@@ -10,37 +10,46 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-Tento cyklus se skládá ze tří částí:
+Výstupem tohoto cyklu bude postupné vypsání čísel od 0 do 9.
 
-1. **Inicializace** - `let i = 0` - zde vytvoříme takzvanou _řídící proměnnou_ `i` a nastavíme ji na počáteční hodnotu (v tomto případě 0).
-2. **Podmínka** - `i < 10` - dokud je tato podmínka splněna, cyklus se bude opakovat.
-3. **Iterace** - `i++` - po každém průchodu cyklem se provede tento příkaz. V našem případě se jedná o zvýšení hodnoty proměnné `i` o 1.
+Jeden z mála jazyků, který nemá klasický `for` cyklus, je například Python. V Pythonu se používá cyklus `for` s iterací přes prvky v poli nebo nějaké jiné kolekci. Takže pro vypsání čísel od 0 do 9 v Pythonu potřebujeme následující kód:
 
-Výstupem tohoto cyklu bude postupné vypsání čísel od 0 do 9. Na konci cyklu bude proměnná `i` rovna 10, cyklus se proto již neopakuje, protože podmínka `i < 10` proprvé nebude splněna.
+```py
+for i in range(10):
+  print(i)
+```
+
+Abychom se vyhnuli technickým detailům konkrétních jazyků, budeme v tomto kurzu zapisovat cykly v pseudokódu:
+
+```
+for i from 0 to 9 do
+  print(i)
+end for
+```
 
 ## Procházení pole
 
 Cyklus často používáme k procházení prvků v nějakém poli. Takto můžeme například vypsat všechny prvky pole na obrazovku:
 
-```js
-const pole = [10, 8, 3, 1, 5];
-for (let i = 0; i < pole.length; i++) {
-  console.log(pole[i]);
-}
+```
+pole = [10, 8, 3, 5, 2, 7, 1, 6, 4, 9]
+for i from 0 to pole.length - 1 do
+  print(pole[i])
+end for
 ```
 
 Cyklus `for` je dostatečně flexibilní, abychom mohli procházet pole různými způsoby. Například procházení pole od konce:
 
-```js
-for (let i = pole.length - 1; i >= 0; i--) {
-  console.log(pole[i]);
-}
+```
+for i from pole.length - 1 to 0 do
+  print(pole[i])
+end for
 ```
 
 nebo třeba procházení po dvou:
 
-```js
-for (let i = 0; i < pole.length; i += 2) {
-  console.log(pole[i]);
-}
+```
+for i from 0 to pole.length - 1 step 2 do
+  print(pole[i])
+end for
 ```
