@@ -16,7 +16,7 @@ Kurz probíhá on-line. Je rozdělen do 10 lekcí, každá lekce probíhá jedno
 
 Kapacita kurzu je 12 účastníků abychom i v on-line odkázali udržet příjemné prostředí.
 
-## Cena: 5 000 kč
+## Cena: 5 500 kč
 
 Cena zahrnuje:
 
