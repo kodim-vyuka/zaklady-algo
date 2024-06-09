@@ -13,15 +13,15 @@ Pseudokód je zjednodušený jazyk, který se používá k popisu algoritmů a p
 Zde je příklad pseudokódu, který spočitá průměr ze všech kladných čísel v poli:
 
 ```
-function average(array)
+func average(array)
   sum = 0
-  for i from 0 to array.length - 1 do
-    if array[i] > 0 then:
+  for i from 0 to array.length - 1
+    if array[i] > 0
       sum = sum + array[i]
-    end if
-  end for
+    endif
+  endfor
   return sum / array.length
-end function
+endfunc
 
 numbers = [10, -8, 0, 5, -2, 7, -1, 6, 4, 9]
 print(average(numbers))
