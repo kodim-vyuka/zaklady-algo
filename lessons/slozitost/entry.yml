@@ -3,4 +3,5 @@ lead: Vysvětlíme si, jak se určuje časová efektivita algoritmu, tedy jak je
 access: protected
 sections:
   - motivace
+  - rychlost-rustu
   - slozitost
