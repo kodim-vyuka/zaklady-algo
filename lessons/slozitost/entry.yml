@@ -1,5 +1,5 @@
-title: Počítání složitosti
-lead: Vysvětlíme si, jak se určuje časová efektivita algoritmu, tedy jak je nějaký algoritmus rychlý nebo pomalý.
+title: Časová složitost
+lead: Představíme si základní pojmy a techniky pro porovnávání rychlosti běhu algoritmů
 access: protected
 sections:
   - motivace
