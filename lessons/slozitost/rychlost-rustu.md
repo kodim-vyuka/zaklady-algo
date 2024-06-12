@@ -31,7 +31,7 @@ Pokud nějaká veličina roste v každém kroku a konstantní, tedy pořád stej
 
 Slovo „lineární“ pochází z latinského _linea_, což znamená „přímka“. Pokud se na lineární růst podíváme graficky, zjistíme, že hodnoty našich úspor budou tvořit přímku.
 
-::fig{scr=linearni-uspory.png}
+::fig{scr=assets/linearni-uspory.png}
 
 ## Kvadratický růst
 
