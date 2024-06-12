@@ -21,7 +21,7 @@ Pojdme si vzít na pomoc program, který počítá největší možný zisk z hi
 - chytřejší řešení využívá pouze dva do sebe zanořené cykly,
 - nejchytřejší řešení využívá pouze jeden cyklus.
 
-Následující graf ukazuje, jak dlouho zabralo jednotlivým algoritmům spočítat výsledek v závislosti na velikosti vstupu. Měření probíhalo tak, že pro každou velikost vstupu _n_ jsme vygenerovali 100 náhodných polí délky _n_ a změřili průměrný čas, který algoritmus potřeboval k výpočtu výsledku pro jedno pole.
+Následující graf ukazuje, jak dlouho zabralo jednotlivým algoritmům spočítat výsledek v závislosti na velikosti vstupu. Měření probíhalo tak, že pro každou velikost vstupu $n$ jsme vygenerovali 100 náhodných polí délky $n$ a změřili průměrný čas, který algoritmus potřeboval k výpočtu výsledku pro jedno pole.
 
 Pro pole délky 100 byl průměrný čas výpočtu následující:
 

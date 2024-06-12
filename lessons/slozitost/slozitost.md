@@ -4,19 +4,32 @@ Dlouho jsme si pomocí příkladů s úsporami připravovali půdu pro to, abych
 
 ### Příklad
 
-Mějme algoritmus, který spočítá součet všech prvků v poli a zároveň bude pro kontrolu vypisovat částečné součty. Algoritmus bude vypadat následovně:
+Mějme pro ilustraci opravdu jednoduchý algoritmus, který spočítá součet všech prvků v poli. Psuedokód algoritmu bude vypadat následovně:
 
 ```
 func sum(array)     // +1
   sum = 0           // +1
   for num in array  // +1
     sum = sum + num // +1
-    print(sum)      // +1
   endfor
   return sum        // +1
 endfunc
 ```
 
+Pojďme si udělat tabulku, kolik kroků bude algoritmus potřebovat pro různé velikosti vstupu: 
+
+| $n$     | Počet kroků |
+| ------- | ----------- |
+| 1       | 5           |
+| 2       | 7           |
+| 3       | 9           |
+| 4       | 11          |
+| 5       | 13          |
+| 6       | 15          |
+| 7       | 17          |
+| 8       | 19          |
+| 9       | 21          |
+| 10      | 23          |
 
 
 
