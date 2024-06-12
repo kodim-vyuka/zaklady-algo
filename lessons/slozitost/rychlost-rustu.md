@@ -35,28 +35,31 @@ Slovo „lineární“ pochází z latinského _linea_, což znamená „přímk
 
 ## Kvadratický růst
 
-Možná si řeknete, že ušetřit každý měsíc 2 tisíce korun je pěkné, ale je to trochu málo. Vydáte se tedy za svým šéfem s žádostí o zvýšení platu. Šéf vám ale řekne, že na jednorázové zvýšení platu nemá teď firma peníze. Nabídne vám však, že vám po dobu jednoho roku každý měsíc zvýší plat o tisíc korun. 
+Možná si řeknete, že ušetřit každý měsíc 2 tisíce korun je pěkné, ale je to trochu málo. Vydáte se tedy za svým šéfem s žádostí o zvýšení platu. Šéf vám ale řekne, že na jednorázové zvýšení platu nemá teď zrovna firma peníze. Nabídne vám však, že vám každý měsíc zvýší plat o tisíc korun po dobu jednoho roku.
 
-První měsíc se vám plat zvýší o tisíc korun, takže ušetříte 3 tisíce. Druhý měsíc už ušetříte 4 tisíce, třetí měsíc 5 tisíc a tak dále. Vaše úspory budou pak růst takto:
+První měsíc se vám plat zvýší o tisíc korun, takže ušetříte 3 tisíce. Druhý měsíc už ušetříte 4 tisíce, třetí měsíc 5 tisíc a tak dále. Vaše úspory budou pak narůstat takto:
 
-| Měsíc  | Vklad    | Úspory   |
-| ------ | ---------| -------- |
-| 1      | 3 tisíce | 53 tisíc |
-| 2      | 4 tisíce | 57 tisíc |
-| 3      | 5 tisíc  | 62 tisíc |
-| 4      | 6 tisíc  | 68 tisíc |
-| 5      | 7 tisíc  | 75 tisíc |
-| 6      | 8 tisíc  | 83 tisíc |
-| 7      | 9 tisíc  | 92 tisíc |
+| Měsíc  | Vklad    | Úspory    |
+| ------ | ---------| --------- |
+| 1      | 3 tisíce | 53 tisíc  |
+| 2      | 4 tisíce | 57 tisíc  |
+| 3      | 5 tisíc  | 62 tisíc  |
+| 4      | 6 tisíc  | 68 tisíc  |
+| 5      | 7 tisíc  | 75 tisíc  |
+| 6      | 8 tisíc  | 83 tisíc  |
+| 7      | 9 tisíc  | 92 tisíc  |
 | 8      | 10 tisíc | 102 tisíc |
 | 9      | 11 tisíc | 113 tisíc |
 | 10     | 12 tisíc | 125 tisíc |
 | 11     | 13 tisíc | 138 tisíc |
 | 12     | 14 tisíc | 152 tisíc |
 
-Všimněte si, že tentokrát náš vklad na spořící účet roste podle toho, jaký je zrovna měsíc. Dokonce si můžeme všimnout, že vklad roste lineárně. Každý měsíc je vklad vyšší o 1 tisíc korun.
+Všimněte si, že tentokrát náš vklad na spořící účet roste podle toho, jaký je zrovna měsíc. Dokonce si můžeme všimnout, že vklad roste lineárně. Každý měsíc je vklad vyšší o 1 tisíc korun, roste tedy vždy o konstantní hodnotu, takže lineárně.
 
-Pokud nějaká veličina roste v každém kroku o hodnotu, a tato hodnota sama roste lineárně, říkáme, že tato naše veličina roste _kvadraticky_. Naše vklady rostou lineárně a proto naše celkové úspory rostou kvadraticky. 
+Pokud nějaká veličina roste v každém kroku o nějakou hodnotu, a tato hodnota roste lineárně, říkáme, že veličina roste _kvadraticky_. Naše vklady rostou lineárně a proto naše celkové úspory rostou kvadraticky. 
 
+Kvadratický růst je obecně rychlejší než lineární. V grafu níže naše kvadratické úspory značíme modrou barvou. Vidíme, že sledují křivku, která se zvedá rychleji než přímka. Taky podle hodnot vidíme, že úspory nám rostou o dost rychleji než v případě lineárního růstu.
+
+::fig{src=assets/kvadraticke-uspory.png}
 
 
