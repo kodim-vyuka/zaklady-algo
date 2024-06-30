@@ -4,12 +4,11 @@ intro: intro.md
 lessons:
   - lessons/priprava
   - lessons/vnorene-cykly
+  - lessons/stromy-rekurze
   - lessons/slozitost
   - lessons/analyza-slozitosti
   - lessons/zasobnik-fronta
-  - lessons/rekurze
   - lessons/logaritmy
-  - lessons/stromy
   - lessons/hloubka-sirka
   - lessons/rozdel-panuj
   - lessons/trizeni

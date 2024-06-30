@@ -1,4 +1,6 @@
 title: Zásobník a fronta
-lead: Představíme se nejzákladnější datové struktury a k čemu se nám mohou hodit.
+lead: Představíme se nejzákladnější datové struktury a k čemu se mohou v praxi hodit.
 access: protected
-sections: []
+sections:
+  - datove-struktury
+  - zasobnik

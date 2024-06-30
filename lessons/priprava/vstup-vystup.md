@@ -1,5 +1,13 @@
 ## Vstup a výstup
 
-Protože nám v tomto kurzu jde hlavně o algoritmy, budeme se snažit co nejvíce odstínit od technických detailů programování. Algoritmus je totiž obecný postup, jak řešit nějaký problém, který je nezávislý na konkrétním programovacím jazyce nebo na konkrétním počítači. Průběh algoritmu většinou popisujeme slovy a větami, psedokódem nebo nějakým jiným zjednodušeným zápisem.
+Psaní programů v pseudokódu nás zachrání od nutnosti řešit technické detaily používání konkrétního programovacího jazyka. Jedné technické věci se však uniká těžko, a to je načítání vstupu a tvorba výstupu. Většina programů totiž pracuje s nějakými daty, které buď už máme uložené, nebo je potřeba je nějakým způsobem načíst. Stejně tak je potřeba nějakým způsobem vypsat výsledky, které program vytvořil.
 
-Když však chceme algorithmus spustit na počítači, musíme ho nějakým způsobem implementovat, načíst vstupní data a vypsat výsledky. Abychom si tento postup co nejvíce zjednodušili, budeme pracovat pouze s aplikacmi v terminálu. Psát pro každou aplikaci grafické rozhraní, webový frontend nebo backend, či mobilní aplikaci, by bylo zbytečně složité a zdržovalo by nás. Věříme, že když dokážete napsat aplikaci v terminálu, zvládnete i většinu dalších typů aplikací podle toho, jaké technologie zrovna máte rádi.
+Všechny programy v této lekci budou pracovat v terminálu. Nebudeme tedy řešit žádné grafické uživatelské rozhraní jako okna, tlačítka nebo textová pole. Vstup tedy najčastějí načteme z nějakého souboru a výstup vypíšeme buď přímo do terminálu, nebo opět do souboru na disku. 
+
+Ukažme si proto sběžný postup, jak načíst data ze souboru a jak vypsat výsledky do terminálu. Bohužel se zde nemůžeme věnovat všem možným programovacím jazykům, takže si ukážeme příklady v Pythonu a JavaScriptu. Věříme, že pokud znáte nějaký jiný jazyk, dokážete si příklady přepsat do něj s pomocí dokumentace nebo třeba AI. 
+
+## Formát vstupu
+
+## Načtení dat v Node.js
+
+Node.js je JavaScriptový runtime, který umožňuje psát programy v JavaScriptu mimo webový prohlížeč. Najdeme zde tedy všechny základní funkce pro práci se soubory, včetně načítání a zápisu.
