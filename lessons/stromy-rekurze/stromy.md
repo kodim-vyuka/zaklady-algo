@@ -4,7 +4,7 @@ Co se týče reprezentace růcných dat, zatím jsme se v tomto kurzu bavili hla
 
 Určitě jste se v praxi již setkali s daty uspořádanými do nějaké stromové struktury. Takto by například mohla vypadat struktura dat pro evidenci zboží v supermarketu. 
 
-::fig{src=potraviny.png}
+::fig{src=assets/potraviny.png}
 
 Takovýto strom má však dost omezenou hloubku, tedy počet různých úrovní, které může obsahovat. My se budeme chtít věnovat hlavně stromům, které mohou mít potenciálně libovolnou hloubku. 
 

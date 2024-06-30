@@ -14,15 +14,15 @@ evidentně už musíte nějaké jiné nůžky vlastnit, abyste je dostali z obal
 
 ### Chlebový kvásek
 
-Dalším příkladem je chlebový kvásek, který se pro potřebu pečení chleba vyrobí tak, že vezmete už existující kvásek a přídáte do něj mouku a vodu. **Kvásek se ted vyrobí pomocí kvásku**.
+Dalším příkladem je chlebový kvásek, který se pro potřebu pečení chleba vyrobí tak, že vezmete už existující kvásek a přídáte do něj mouku a vodu. **Kvásek se tedy vyrobí pomocí kvásku**.
 
 ### Hravé zkratky
 
-Určitě už jste někdy slyšeli o programovacím jazyku PHP. Věděli jste, že tato zkratka znamená _PHP: Hypertext Preprocessor_? První písmeno zkratky PHP tedy přestavuje tuto zkratku samu o sobě. Podobný příklad je zkratka [projektu GNU](https://www.gnu.org/), která znamená _GNU's Not Unix_. 
+Určitě už jste někdy slyšeli o programovacím jazyku PHP. Věděli jste ale, že tato zkratka znamená _PHP: Hypertext Preprocessor_? První písmeno zkratky PHP tedy přestavuje tuto zkratku samu o sobě. Podobný příklad je zkratka [projektu GNU](https://www.gnu.org/), která znamená _GNU's Not Unix_. 
 
 ### Nekonečné zrcadlo
 
-Další ukázku rekurze objevíte, když se pokusíte v některém programu pro on-line schůzky nasdílet obrazovku, na které máte tento program tevřený. Výsledek je obrazovka, která do nekonečně obsahuje menší kopii sebe sama.
+Další ukázku rekurze objevíte, když se pokusíte v některém programu pro on-line schůzky nasdílet obrazovku, na které je otevřené okno tohoto programu. Výsledek je obrazovka, která do nekonečna obsahuje menší kopie sebe sama.
 
 ::fig{src="assets/infinity-mirror.png"}
 
