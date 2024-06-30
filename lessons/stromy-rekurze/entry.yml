@@ -1,5 +1,5 @@
-title: Stromy
-lead: Mnoho dat, se kterými v praxi pracujeme, má stromovou strutkuru a je proto dobré vědět, jak s takovými strukturami zacházet.
+title: Rekurze a stromy
+lead: Vysvětlíme si, co je to rekurze a jak to souvisí s reprezentací dat pomocí stromů.
 access: protected
 sections:
   - rekurze
